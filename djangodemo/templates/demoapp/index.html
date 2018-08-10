@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} Welcome to DjangoDemo {% endblock %}
+
+{% block content %}
+
+    <h2>Welcome to my simple Django Demo app</h2>
+    <p><a class="btn btn-success" href="{% url 'demoapp:list' %}">View Students</a></p>
+    <p><a class="btn btn-info" href="{% url 'demoapp:add' %}">Add Student</a></p>
+
+{% endblock %}
